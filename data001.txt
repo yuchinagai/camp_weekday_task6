@@ -1,0 +1,5 @@
+2
+maeda yamaguchi
+2
+yamaguchi 1500
+maeda 1000

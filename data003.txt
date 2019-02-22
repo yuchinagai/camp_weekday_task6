@@ -1,0 +1,18 @@
+11
+asano ishikawa kobira sugimoto takahashi nakayashiki nishino harada fujita maeda yamaguchi
+15
+ishikawa 1500
+sugimoto 1000
+nakayashiki 2000
+harada 2000
+maeda 2000
+yamaguchi 4000
+asano 3000
+kobira 5000
+takahashi 6000
+nishino 7000
+fujita 8000
+yamaguchi 9500
+maeda 8000
+harada 3500
+asano 10000
