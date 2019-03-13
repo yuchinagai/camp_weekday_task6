@@ -17,9 +17,27 @@
 1.upto 3 do |t|
   puts "例#{t}の答え"
   File.open("data00#{t}.txt", "r"){ |f|
-    # ここにプログラムを記述してください。
+  # 1行目呼び出し
+  member_num = f.gets.to_i
+  # 2行目呼び出し
+  member_name = f.gets.split
+  # 3行目をsplitしてvalueが0のhashに変換
+  hash = {}
+  member_name.each do |value|
+  hash.store(value, 0)
+  end
+  # 4行目呼び出し
+  study_times = f.gets.to_i
+  # 4行目の数だけ5行目以降を呼び出して、hashを更新。
+  study_times.times do |study|
+  studycost = f.gets.split
+  hash[studycost[0]] += studycost[1].to_i
+  end
+  # hashの並び替え
+  p hash.sort_by { |key, value| -value }.to_h
   }
 end
+
 
 # data001で期待する出力
 # {"yamaguchi"=>1500, "maeda"=>1000}
